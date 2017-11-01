@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alina Tabachnikas](https://up.htmlacademy.ru/htmlcss/19/user/95161).
-* Наставник: `Неизвестно`.
-
+* Наставник:[Денис Байдаров](https://htmlacademy.ru/profile/4er).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
