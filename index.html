@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
     <header class="main-header">
          <nav class="main-navigation">
            <ul class="site-navigation">
@@ -20,19 +20,21 @@
             </nav>
        </header>
 <main class="container">
-<h1 class="visually-hidden">Седона</h1>
-  <section class="main-image"><img src="main-text.img" width="1200" height="30" alt="Sedona"></section>
+  <h1 class="visually-hidden">Седона</h1>
+    <div class="main-image"><img src="main-text.img" width="1200" height="30" alt="Sedona"></div>
   <!--<section class="main-content">-->
     <section>
       <h2> Седона небольшой городок в Аризоне,заслуживающий большего</h2>
         <p>  рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
     </section>
-<section class="main-reasons-color">
-  <h3>Настоящий городок</h3>
-  <h4>-№1-</h4>
-    <p>Седона-не аттракцион для туристов.Там течет своя жизнь</p>
-</section>
-<img class="content-image" src="main-house.img" width="66%" height="100" alt="дом в Седоне" >
+    <section class="main-reasons-1">
+      <h3>Настоящий городок</h3>
+        <h4>-№1-</h4>
+        <p>Седона-не аттракцион для туристов.Там течет своя жизнь</p>
+    </section>
+    <div class"content-image">
+      <img src="main-house.img" width="66%" height="100" alt="дом в Седоне" >
+    </div>
 <!--не уверена нужно ли 3 рекомендации оборачивать в контейнер <article class="sedona-recommendation">-->
   <section class="sedona-recomendation">
     <h3>Жилье</h3>
@@ -46,38 +48,52 @@
     <h3>Сувениры</h3>
       <p>Не только китайского, но ии местного производства</p>
   </section>
-  <img class="content-image" src="main-devil-bridge.img" width="66%" height="100" alt="Мост дьявола в Седоне" >
+<div class="content-image">
+   <src="main-devil-bridge.img" width="66%" height="100" alt="Мост дьявола в Седоне" >
+</div>
 <!--</article>-->
-<section class="main-reasons-color">
+<section class="main-reasons-1">
   <h3>Там есть мост дьявола</h3>
   <h4>-№2-</h4>
-    <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
+  <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
 </section>
 
-<section class="main-reasons">
+<section class="main-reasons-2">
   <h3>Небольшая площадь</h3>
   <h4>-№3-</h4>
-    <p>Все достопримечательности находятся очень близко</p>
+  <p>Все достопримечательности находятся очень близко</p>
 </section>
-<section class="main-reasons">
+<section class="main-reasons-2">
   <h3>Красивая дорога</h3>
   <h4>-№4-</h4>
-    <p>Седона-не аттракцион для туристов.Там течет своя жизнь.</p>
+  <p>Седона-не аттракцион для туристов.Там течет своя жизнь.</p>
 </section>
-<section class="main-reasons">
+<section class="main-reasons-2">
   <h3>Мало туристов</h3>
   <h4>-№5-</h4>
-    <p>Большинство едет в Гранд Каньон и толпится там</p>
+  <p>Большинство едет в Гранд Каньон и толпится там</p>
 </section>
 <section class="hotel-search">
   <h3>Заинтересовались?</h3>
   <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложение в седоне</p>
   <form><button class="b-hotel-search">поиск гостиницы в седоне</button></form>
+  <img class="sedona-map" src="sedona-map.img" width="100%" height="300" alt="Карта Седоны" >
 </section>
-
-
-
-
-    </body>
   </main>
+  <footer class="main footer">
+    <p>#visitsedona</p><!--или здесь заголовок?-->
+    <div class="footer-social">
+       <ul>
+         <li><a class="social-button" href="#">Вконтакте</a></li>
+         <li><a class="social-button" href="#">Фейсбук</a></li>
+         <li><a class="social-button" href="#">Инстаграм</a></li>
+       </ul>
+     </div>
+     <p class="footer-copyright">
+      <a class="button" href="https://htmlacademy.ru">
+        <img class="footer-copyright-img" src="copuright.img"width=70 height=30 alt="website by HTML ACADEMY">
+      </a>
+  </footer>
+    </body>
+
 </html>
