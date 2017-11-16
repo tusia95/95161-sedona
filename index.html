@@ -14,7 +14,7 @@
                     <li class="menu-item"><a class="menu-item-ref" href="#">Информация</a></li>
                     <li class="menu-item"><a class="menu-item-ref" href="#">Фото и видео</a></li>
                     <li class="menu-item"><a class="menu-item-ref" href="#">Карта штата</a></li>
-                    <li class="menu-item"><a class="menu-item-ref" href="#">Гостиницы</a></li>
+                    <li class="menu-item"><a class="menu-item-ref" href="hotels.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -91,10 +91,22 @@
             </p>
         </footer>
         <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for "arrival-date">Дата заезда:</label><input type="date" id="arrival-date" name="arrival-date" placeholder="24 апреля 2017"><br>
-            <label for "departure-date">Дата выезда:</label><input type="date" id="departure-date" name="departure-date" placeholder="4 июля 2017"><br>
+            <label for "arrival-date">Дата заезда:</label><input type="date" id="arrival-date" name="arrival-date" placeholder="24 апреля 2017"><!--placeholder с таким типам поля не работает, как задать значение как в макете-->
+            <label for "hotel-arrival-calendar" class="visually-hidden">Календарь для выбора даты заезда</label>
+            <input type="button" name="hotel-arrival-calendar" id="hotel-arrival-calendar">
+            <label for "hotel-departure-calendar" class="visually-hidden">Календарь для выбора даты выезда</label>
+            <input type="button" name="hotel-departure-calendar" id="hotel-departure-calendar">
+            <label for "departure-date">Дата выезда:</label><input type="date" id="departure-date" name="departure-date" placeholder="4 июля 2017">
+            <label for="hotel-minus-adult" class="visually-hidden">уменьшить количество взрослых</label>
+            <input type="button" name="hotel-minus-adult" id="hotel-minus-adult">
             <label for "adults-number">Взрослые:</label><input type="number" id="adults-number" name="adults-number" min="0" step="1" value="" placeholder="2">
-            <label for "child-number">Дети:</label><input type="number" id="child-number" name="child-number" min="0" step="1" value="" placeholder="0"><br>
+            <label for="hotel-plus-adult" class="visually-hidden">увеличить количество взрослых</label>
+            <input type="button" name="hotel-plus-adult" id="hotel-plus-adult">
+            <label for="hotel-minus-child" class="visually-hidden">уменьшить количество детей</label>
+            <input type="button" name="hotel-minus-child" id="hotel-minus-child">
+            <label for "child-number">Дети:</label><input type="number" id="child-number" name="child-number" min="0" step="1" value="" placeholder="0">
+            <label for="hotel-plus-child" class="visually-hidden">увеличить количество детей</label>
+            <input type="button" name="hotel-plus-child" id="hotel-plus-child">
             <input type="submit" class="search-hotel-button" name="search-hotel-form-submit" value="Найти">
         </form>
     </body>

@@ -29,8 +29,10 @@
                     <input class="filter-checkbox" type="checkbox" name="hotel" id="hotel"><label for="hotel">гостиница</label>
                     <input class="filter-checkbox" type="checkbox" name="motel" id="motel"><label for="motel">мотель</label>
                     <input class="filter-checkbox" type="checkbox" name="appartments" id="appartments"><label for="appartments">аппартаменты</label><br>
-                    <label for="min-day-price-field">стоимость в сутки(р):</label><input class="min-price-field" type="text">
-                    0<input type="range" name="min-day-price" id="min-day-price" min="0" max="100000" step="100">100000
+                    <label for="min-day-price-field">стоимость в сутки(р):
+                        <input class="max-price-field" type="text" placeholder="до 3000">
+                    </label>
+                    0<input class="filter-range" type="range" name="min-day-price" id="min-day-price" min="0" max="100000" step="100">100000
                     <button class="show-search-results" type="submit">Показать</button>
                 </form>
 
