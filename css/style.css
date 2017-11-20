@@ -1,0 +1,172 @@
+    html {
+
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family:'PT Sans','Arial', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+
+
+
+    }
+
+     a {
+
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000000;
+        line-height: 26px;
+
+
+
+    }
+    .site-navigation {
+        list-style-type:none;
+    }
+
+    .site-navigation a:hover {
+        color:#81b3d2;
+
+    }
+    .site-navigation a:focus {
+        color:#766357;
+    }
+    .hotel-search a:hover {
+        color:#604e43;
+    }
+    .hotel-search a:focus {
+        color:#503e33;
+    }
+
+    .main-background {
+    /*    weight:1000px;
+        height:510px;*/
+        background-color:#ffffff;
+        background-image:url("img/background_photo.jpg");/*не работает фоновая картинка,почему?*/
+
+    }
+    .main-about-sedona-header {
+        font-size:26px;
+        line-height: 26px;
+        text-align:center;
+        color:#000000;
+    }
+
+    .visit-Sedona-reasons {
+        font-size: 14px;
+        line-height: 26px;
+        text-align:center;
+        color: #333333;
+
+    }
+
+
+    .main-reasons-blue {
+        background-color: #81b3d2;
+
+    }
+
+    .reason-header {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 21px;
+        color: #000000;
+    }
+    .reason-number {
+
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 21px;
+        color: #333333
+    }
+    .reason-content {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    color: #333333;
+    }
+
+    .colored-header,
+    .colored-number,
+    .colored-content
+      {color:#ffffff;}
+
+
+    .sedona-recommendation {
+        width: 255px;
+        height: 330px;
+        background-image:url("map.jpg");
+
+    }
+
+    .sedona-recommendation-header {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 21px;
+        color: #000000;
+    }
+    .sedona-recommendation-content {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 21px;
+        color: #333333;
+
+    }
+
+    .hotel-search-header {
+        font-size: 31px;
+        font-weight: bold;
+        line-height: 31px;
+        color: #000000;
+    }
+
+    .hotel-search-dates {
+        font-size: 14px;
+        line-height: 24px;
+        color: #333333;
+
+    }
+
+    .hotel-search {
+        width: 567px;
+        height: auto;;
+
+    }
+    .hotel-search-area {
+    width:567px;
+    height:87px;
+    line-height:  87px;
+    text-align:center;
+    background-color:#766357;
+    }
+    .hotel-search-ref {
+
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 26px;
+        color: #ffffff;
+
+
+    }
+    .main-footer {
+        width:1200px;
+        height:auto;
+        background-color:#f9fbf6;
+        margin-bottom:10px;
+    }
+    .footer-social {
+        list-style-type:none;
+    }
+    .footer-sedona-tag {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 26px;
+        color: #000000;
+
+    }
+    .footer-copyright button:hover {
+        color: #81b3d2;
+    }
