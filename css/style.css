@@ -42,10 +42,11 @@
     }
 
     .main-background {
-    /*    weight:1000px;
-        height:510px;*/
+        weight:1000px;
+        height:510px;
         background-color:#ffffff;
-        background-image:url("img/background_photo.jpg");/*не работает фоновая картинка,почему?*/
+        background-image:url("../img/background_photo.jpg");/*не работает фоновая картинка,почему?*/
+        background-repeat:no-repeat;
 
     }
     .main-about-sedona-header {
@@ -97,10 +98,24 @@
 
     .sedona-recommendation {
         width: 255px;
-        height: 330px;
-        background-image:url("map.jpg");
+        background-repeat:no-repeat;
+        padding-top:75px;
 
     }
+
+    .accomodation-recommendation {
+        background-image:url("../img/svg-sedona/icon-1.svg");
+    }
+    .food-recommendation {
+        background-image:url("../img/svg-sedona/icon-2.svg");
+    }
+    .souvenirs-recommendation {
+        background-image:url("../img/svg-sedona/icon-3.svg");
+    }
+
+
+
+
 
     .sedona-recommendation-header {
         font-size: 21px;
@@ -108,6 +123,7 @@
         line-height: 21px;
         color: #000000;
     }
+
     .sedona-recommendation-content {
         font-size: 14px;
         font-weight: normal;
@@ -117,9 +133,9 @@
     }
 
     .hotel-search-header {
-        font-size: 31px;
+        font-size: 21px;
         font-weight: bold;
-        line-height: 31px;
+        line-height: 26px;
         color: #000000;
     }
 
@@ -136,21 +152,20 @@
 
     }
     .hotel-search-area {
-    width:567px;
-    height:87px;
+    width: 567px;
+    height: auto;
     line-height:  87px;
-    text-align:center;
-    background-color:#766357;
+    text-align: center;
+    background-color: #766357;
     }
-    .hotel-search-ref {
 
+    .hotel-search-ref {
         font-size: 21px;
         font-weight: bold;
         line-height: 26px;
         color: #ffffff;
-
-
     }
+
     .main-footer {
         width:1200px;
         height:auto;
@@ -160,6 +175,11 @@
     .footer-social {
         list-style-type:none;
     }
+
+    .footer-social .twitter{
+        background-image: url("../img/svg-sedona/twitter.svg");/*проблема с фоном, не работает иконка соц сетей*/
+    }
+
     .footer-sedona-tag {
         font-size: 21px;
         font-weight: bold;
@@ -169,4 +189,77 @@
     }
     .footer-copyright button:hover {
         color: #81b3d2;
+    }/*не работает изменение цвета hover*/
+
+    .search-hotel-form input[type="date"],
+    .search-hotel-form input[type="number"],
+    .search-hotel-form input[type="button"] {
+        background-color:#f2f2f2;
+        border:0px;
+    }
+
+    .search-hotel-form input[type="date"]:hover,
+    .search-hotel-form input[type="number"]:hover {
+        background-color: #ebebeb;
+    }
+
+    .search-hotel-form input[type="date"]:focus,
+    .search-hotel-form input[type="number"]:focus {
+        background-color: #ffffff;
+        border: 1px solid #e5e5e5;
+    }
+
+
+
+    .search-hotel-form label {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+
+    .search-hotel-form .calendar {
+        background-img:url("../img/svg-sedona/calendar.svg");/*почему не работает иконка календаря на кнопке?*/
+    }
+
+    .search-hotel-form .arithmetic-sign {
+        font-size:21px;
+        color: #a9a9a9;
+
+    }
+
+    .search-hotel-form .arithmetic-sign:hover {
+        color: #000000;
+    }
+
+    .search-hotel-form .arithmetic-sign:focus {
+        color:#81b3d2;
+        border:0px;
+    }/*как избавиться от голубой рамки при клике?*/
+
+    }
+    input::-webkit-input-placeholder {
+        font:inherit;
+        font-size:14px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+
+    .search-hotel-form  input.search-hotel-button {
+        width:458px;
+        height: auto;
+        font:inherit;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 26px;
+        color: #ffffff;
+        text-align:center;
+        background-color: #81b3d2;
+    }
+
+    .search-hotel-form  input.search-hotel-button:hover {
+        background-color:#669ec0;
+    }
+
+    .search-hotel-form  input.search-hotel-button:focus {
+        background-color:#5496bd;
     }

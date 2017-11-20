@@ -38,15 +38,15 @@
             <div class="content-image">
                 <img src="img/sedona_building.jpg" width="800" height="100" alt="Здание в Седоне"></img>
             </div>
-            <section class="sedona-recommendation">
-                <h3 class="sedona-recommendation-header">Жилье</h3>
+            <section class="sedona-recommendation accomodation-recommendation">
+                <h3 class="sedona-recommendation-header ">Жилье</h3>
                 <p class="sedona-recommendation-content">Рекомендуем пожить в настоящем мотеле.Все как в кино!</p>
             </section>
-            <section class="sedona-recommendation">
+            <section class="sedona-recommendation food-recommendation">
                 <h3 class="sedona-recommendation-header">Еда</h3>
                 <p class="sedona-recommendation-content">Всегда заказывайте фирменный бургер.Вы не разочаруетесь</p>
             </section>
-            <section class="sedona-recommendation">
+            <section class="sedona-recommendation souvenirs-recommendation">
                 <h3 class="sedona-recommendation-header">Сувениры</h3>
                 <p class="sedona-recommendation-content">Не только китайского, но и местного производства</p>
             </section>
@@ -85,9 +85,9 @@
         <footer class="main-footer">
             <p class="footer-sedona-tag">#visitsedona</p>
             <ul class="footer-social">
-                <li><a class="social-button vk" href="#">Вконтакте</a></li>
-                <li><a class="social-button fb" href="#">Фейсбук</a></li>
-                <li><a class="social-button inst" href="#">Инстаграм</a></li>
+                <li><a class="social-button twitter" href="#">Twitter</a></li>
+                <li><a class="social-button fb" href="#">Facebook</a></li>
+                <li><a class="social-button ytube" href="#">Instagramm</a></li>
             </ul>
             <p class="footer-copyright">website by</p>
                 <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -98,21 +98,22 @@
         <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="get">
             <label for "arrival-date">Дата заезда:</label><input type="date" id="arrival-date" name="arrival-date" placeholder="24 апреля 2017"><!--placeholder с таким типам поля не работает, как задать значение как в макете-->
             <label for "hotel-arrival-calendar" class="visually-hidden">Календарь для выбора даты заезда</label>
-            <input type="button" name="hotel-arrival-calendar" id="hotel-arrival-calendar">
+            <input class="calendar" type="button" name="hotel-arrival-calendar" id="hotel-arrival-calendar">
             <label for "hotel-departure-calendar" class="visually-hidden">Календарь для выбора даты выезда</label>
-            <input type="button" name="hotel-departure-calendar" id="hotel-departure-calendar">
+            <input class="calendar" type="button" name="hotel-departure-calendar" id="hotel-departure-calendar">
             <label for "departure-date">Дата выезда:</label><input type="date" id="departure-date" name="departure-date" placeholder="4 июля 2017">
             <label for="hotel-minus-adult" class="visually-hidden">уменьшить количество взрослых</label>
-            <input type="button" name="hotel-minus-adult" id="hotel-minus-adult">
+            <input  class="arithmetic-sign" type="button" name="hotel-minus-adult" id="hotel-minus-adult" value="-">
             <label for "adults-number">Взрослые:</label><input type="number" id="adults-number" name="adults-number" min="0" step="1" value="" placeholder="2">
             <label for="hotel-plus-adult" class="visually-hidden">увеличить количество взрослых</label>
-            <input type="button" name="hotel-plus-adult" id="hotel-plus-adult">
+            <input class="arithmetic-sign" type="button" name="hotel-plus-adult" id="hotel-plus-adult" value="+">
             <label for="hotel-minus-child" class="visually-hidden">уменьшить количество детей</label>
-            <input type="button" name="hotel-minus-child" id="hotel-minus-child">
+            <input class="arithmetic-sign" type="button" name="hotel-minus-child" id="hotel-minus-child" value="-">
             <label for "child-number">Дети:</label><input type="number" id="child-number" name="child-number" min="0" step="1" value="" placeholder="0">
             <label for="hotel-plus-child" class="visually-hidden">увеличить количество детей</label>
-            <input type="button" name="hotel-plus-child" id="hotel-plus-child">
-            <input type="submit" class="search-hotel-button" name="search-hotel-form-submit" value="Найти">
+            <input class="arithmetic-sign" type="button" name="hotel-plus-child" id="hotel-plus-child" value="+">
+            <input type="submit" class="search-hotel-button" name="search-hotel-form-submit" value="найти">
+
         </form>
     </body>
 </html>
