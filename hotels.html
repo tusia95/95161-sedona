@@ -3,12 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>Поиск отеля в Седоне</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
-                    <img src="img/header_logo.png" width="50" height="50" alt="Логотип Седоны">
+                    <img src="img/header_logo.png" width="70px" height="50px" alt="Логотип Седоны">
                 </a>
                 <ul class="site-navigation">
                     <li class="menu-item"><a class="menu-item-ref" href="#">Информация</a></li>
@@ -29,29 +32,31 @@
                     <input class="filter-checkbox" type="checkbox" name="hotel" id="hotel"><label for="hotel">гостиница</label>
                     <input class="filter-checkbox" type="checkbox" name="motel" id="motel"><label for="motel">мотель</label>
                     <input class="filter-checkbox" type="checkbox" name="appartments" id="appartments"><label for="appartments">аппартаменты</label><br>
-                    <label for="min-day-price-field">стоимость в сутки(р):
+                    <label class="day-price" for="min-day-price-field">стоимость в сутки(р):
                         <input class="min-price-field" type="text" placeholder="от 0">
                         <input class="max-price-field" type="text" placeholder="до 3000">
                     </label>
-                    0<input class="filter-range" type="range" name="min-day-price" id="min-day-price" min="0" max="100000" step="100">100000
+                    <label for="min-day-price" class="visually-hidden" >Минимальная цена в сутки</label>
+                    <input class="filter-range" type="range" name="min-day-price" id="min-day-price" min="0" max="100000" step="100">
+                    <!--Здесь должен быть бегунок для макисмальной цены-->
                     <button class="show-search-results" type="submit">Показать</button>
                 </form>
             </section>
             <section class="search-results">
                 <h1 class="search-results-number">Найдено:3</h1>
-                <p class="result-sorting-">сортировка</p>
-                <a class="current-results-sorting">по цене</a>
-                <a class="results-sorting">по типу</a>
-                <a class="results-sorting">по рейтингу</a>
-                <a class="ascending-sorting">
-                    <img class="arrow-active-sorting" src="http://placehold.it/10x10" width=10 height=10 alt="сортировка по возрастанию">
+                <p class="result-sorting">сортировка:</p>
+                <a class="current-results-sorting" href="#">по цене</a>
+                <a class="results-sorting" href="#">по типу</a>
+                <a class="results-sorting" href="#">по рейтингу</a>
+                <a class="ascending-sorting" href="#">
+                    <img class="arrow-active-sorting" src="img/svg-sedona/icon-down-dir.svg" width="14" height="14" alt="сортировка по возрастанию">
                 </a>
-                <a class="descending-sorting">
-                    <img class="arrow-noactive-sorting" src="http://placehold.it/10x10" width=10 height=10 alt="сортировка по убыванию">
+                <a class="descending-sorting" href="#">
+                    <img class="arrow-noactive-sorting" src="img/svg-sedona/icon-up-dir.svg" width="14" height="14" alt="сортировка по убыванию">
                 </a>
                 <section class="found-hotel">
                     <div class="hotel-photo">  <img src="img/amara_resort.png" width="100" height="100" alt="Amara Resort&Spa"></div>
-                    <h2 class="hotel-name">Amara Resort_&_Spa</h2><!--сделала через нижний слэш, т.к. иначе atom некорректно отображает-->
+                    <a class="hotel-name" href="#">Amara Resort_&_Spa</a><!--сделала через нижний слэш, т.к. иначе atom некорректно отображает-->
                     <div class="hotel-squares-number">  <img src="img/4_squares.png" width="50" height="10" alt="4 звезды"></div>
                     <p class="hotel-type">Гостиница</p>
                     <p class="hotel-price">от 4000 р.</p>
@@ -61,7 +66,7 @@
                 </section>
                 <section class="found-hotel">
                     <div class="hotel-photo"><img src="img/desert_quail_inn.png" width="100" height="100" alt="Hotel Desert Quail Inn"></img></div>
-                    <h2 class="hotel-name">Desert Quail Inn</h2>
+                    <a class="hotel-name" href="#">Desert Quail Inn</a>
                     <div class="hotel-squares-number">  <img src="img/3_squares.png" width="40" height="10" alt="4 звезды"></div>
                     <p class="hotel-type">Мотель</p>
                     <p class="hotel-price">от 3000 р.</p>
@@ -71,7 +76,7 @@
                 </section>
                 <section class="found-hotel">
                     <div class="hotel-photo">  <img src="img/villa_poco.png" width="100" height="100" alt="Hotel at Poco Diablo"></div>
-                    <h2 class="hotel-name">Villas At Poco Diablo</h2>
+                    <a class="hotel-name" href="#">Villas At Poco Diablo</a>
                     <div class="hotel-squares-number">  <img src="img/2_squares.png" width="30" height="10" alt="2 звезды"></div>
                     <p class="hotel-type">Апартаменты</p>
                     <p class="hotel-price">от 2000 р.</p>
@@ -84,12 +89,13 @@
         <footer class="main-footer">
             <p class="footer-sedona-tag">#visitsedona</p>
             <ul class="footer-social">
-            <li><a class="social-button vk" href="#">Вконтакте</a></li>
-            <li><a class="social-button fb" href="#">Фейсбук</a></li>
-            <li><a class="social-button inst" href="#">Инстаграм</a></li>
-            <p class="footer-copyright">
+                <li><a class="social-button twitter" href="#">Twitter</a></li>
+                <li><a class="social-button fb" href="#">Facebook</a></li>
+                <li><a class="social-button ytube" href="#">youtube</a></li>
+            </ul>
                 <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="footer-copyright-img" src="img/logo_name.png"width=70 height=30 alt="website by HTML ACADEMY"></a>
+                <img class="footer-copyright-img" src="img/svg-sedona/logo-htmlacademy.svg" width=70 height=30 alt="website by HTML ACADEMY">
+                </a>
             </p>
         </footer>
     </body

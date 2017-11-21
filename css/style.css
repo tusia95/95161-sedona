@@ -7,9 +7,6 @@
         font-family:'PT Sans','Arial', sans-serif;
         font-weight: normal;
         text-transform: uppercase;
-
-
-
     }
 
      a {
@@ -19,8 +16,6 @@
         font-weight: bold;
         color: #000000;
         line-height: 26px;
-
-
 
     }
     .site-navigation {
@@ -45,7 +40,7 @@
         weight:1000px;
         height:510px;
         background-color:#ffffff;
-        background-image:url("../img/background_photo.jpg");/*не работает фоновая картинка,почему?*/
+        background-image:url("../img/background_photo.jpg");
         background-repeat:no-repeat;
 
     }
@@ -76,6 +71,7 @@
         line-height: 21px;
         color: #000000;
     }
+
     .reason-number {
 
         font-size: 14px;
@@ -113,10 +109,6 @@
         background-image:url("../img/svg-sedona/icon-3.svg");
     }
 
-
-
-
-
     .sedona-recommendation-header {
         font-size: 21px;
         font-weight: bold;
@@ -151,13 +143,14 @@
         height: auto;;
 
     }
-    .hotel-search-area {
+
+    /*.hotel-search-area {
     width: 567px;
     height: auto;
     line-height:  87px;
     text-align: center;
     background-color: #766357;
-    }
+    }*/
 
     .hotel-search-ref {
         font-size: 21px;
@@ -172,79 +165,124 @@
         background-color:#f9fbf6;
         margin-bottom:10px;
     }
+
     .footer-social {
         list-style-type:none;
     }
 
-    .footer-social .twitter{
+    .social-button.twitter{
+        width:46px;
+        height: 46px;
         background-image: url("../img/svg-sedona/twitter.svg");/*проблема с фоном, не работает иконка соц сетей*/
+        background-repeat:no-repeat;
+        background-color: #81b3d2;
     }
 
-    .footer-sedona-tag {
-        font-size: 21px;
-        font-weight: bold;
-        line-height: 26px;
-        color: #000000;
-
+    .social-button.fb {
+        width:46px;
+        height: 46px;
+        background-image: url("../img/svg-sedona/fb-icon.svg");/*проблема с фоном, не работает иконка соц сетей*/
+        background-repeat:no-repeat;
+        background-color: #81b3d2;
     }
-    .footer-copyright button:hover {
-        color: #81b3d2;
-    }/*не работает изменение цвета hover*/
 
-    .search-hotel-form input[type="date"],
-    .search-hotel-form input[type="number"],
-    .search-hotel-form input[type="button"] {
+    .social-button.ytube {
+        width:46px;
+        height: 46px;
+        background-image: url("../img/svg-sedona/youtube.svg");/*проблема с фоном, не работает иконка соц сетей*/
+        background-repeat:no-repeat;
+        background-color: #81b3d2;
+    }
+    .social-button.twitter{
+        width:46px;
+        height: 46px;
+        background-image: url("../img/svg-sedona/twitter.svg");/*проблема с фоном, не работает иконка соц сетей*/
+        background-repeat:no-repeat;
+        background-color: #81b3d2;
+    }
+    /*стили формы главной*/
+    .search-hotel-form-main input[type="date"],
+    .search-hotel-form-main input[type="number"],
+    .search-hotel-form-main input[type="button"] {
         background-color:#f2f2f2;
         border:0px;
     }
 
-    .search-hotel-form input[type="date"]:hover,
-    .search-hotel-form input[type="number"]:hover {
+    .search-hotel-form-main input[type="date"]:hover,
+    .search-hotel-form-main input[type="number"]:hover {
         background-color: #ebebeb;
     }
 
-    .search-hotel-form input[type="date"]:focus,
-    .search-hotel-form input[type="number"]:focus {
+    .search-hotel-form-main input[type="date"]:focus,
+    .search-hotel-form-main input[type="number"]:focus {
         background-color: #ffffff;
         border: 1px solid #e5e5e5;
     }
 
 
 
-    .search-hotel-form label {
+    .search-hotel-form-main label {
         font-size: 14px;
         font-weight: bold;
         line-height: 26px;
     }
 
-    .search-hotel-form .calendar {
+    .search-hotel-form-main .calendar {
         background-img:url("../img/svg-sedona/calendar.svg");/*почему не работает иконка календаря на кнопке?*/
     }
 
-    .search-hotel-form .arithmetic-sign {
+    .search-hotel-form-main.arithmetic-sign {
         font-size:21px;
         color: #a9a9a9;
 
     }
 
-    .search-hotel-form .arithmetic-sign:hover {
+    .search-hotel-form-main .arithmetic-sign:hover {
         color: #000000;
     }
 
-    .search-hotel-form .arithmetic-sign:focus {
+    .search-hotel-form-main .arithmetic-sign:focus {
         color:#81b3d2;
         border:0px;
-    }/*как избавиться от голубой рамки при клике?*/
+    }
 
     }
-    input::-webkit-input-placeholder {
-        font:inherit;
-        font-size:14px;
+    .search-hotel-form-main input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 14px;
         font-weight: bold;
         line-height: 26px;
+        color: #000000;
     }
 
-    .search-hotel-form  input.search-hotel-button {
+    .search-hotel-form-main input::-moz-placeholder { /* Firefox 19+ */
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    .search-hotel-form-main input:-ms-input-placeholder { /* IE 10+ */
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    .search-hotel-form-main input:-moz-placeholder { /* Firefox 18- */
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    .search-hotel-form-main input:placeholder {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    .search-hotel-form-main  input.search-hotel-button {
         width:458px;
         height: auto;
         font:inherit;
@@ -256,10 +294,225 @@
         background-color: #81b3d2;
     }
 
-    .search-hotel-form  input.search-hotel-button:hover {
+    .search-hotel-form-main  input.search-hotel-button:hover {
         background-color:#669ec0;
     }
 
-    .search-hotel-form  input.search-hotel-button:focus {
+    .search-hotel-form-main  input.search-hotel-button:focus {
         background-color:#5496bd;
     }
+        /*********css для hotels.html************************ */
+        .search-hotel-form {
+        background-image:url("../img/filter_background.png");
+        background-repeat: no-repeat;
+        }
+        .search-hotel-form .infrastructure,
+        .search-hotel-form .accomodation-type {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 21px;
+            color: #ffffff;
+        }
+
+        .search-hotel-form label {
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            color: #ffffff;
+        }
+
+        .search-hotel-form label.day-price {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 21px;
+            color: #ffffff;
+        }
+
+        .search-hotel-form input[type="text"] {
+            border:2px solid #ffffff;
+            background-color: transparent;
+        }
+
+        .search-hotel-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            color: #ffffff;
+        }
+
+        .search-hotel-form input::-moz-placeholder { /* Firefox 19+ */
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            color: #ffffff;
+        }
+
+        .search-hotel-form input:-ms-input-placeholder { /* IE 10+ */
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            color: #ffffff;
+        }
+
+        .search-hotel-form input:-moz-placeholder { /* Firefox 18- */
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            color: #ffffff;
+        }
+
+        .search-hotel-form input:placeholder {
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            color: #ffffff;
+        }
+        /*.search-hotel-form {text-align: center;}*/
+
+        .search-hotel-form button {
+            width: 135px;
+            height: 35px;
+            border: 2px solid #ffffff;
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color:transparent;
+
+
+        }
+
+        .search-results .search-results-number {
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 26px;
+            color: #000000;
+        }
+
+        .search-results .result-sorting {
+            font-size: 12px;
+            font-weight: regular;
+            line-height: 18px;
+            color: #000000;
+        }
+
+        .search-results a.current-results-sorting {
+            font-size: 12px;
+            font-weight: regular;
+            line-height: 18px;
+            color: #81b3d2;
+        }
+
+        .search-results a.results-sorting {
+
+            font-size: 12px;
+            font-weight: regular;
+            line-height: 18px;
+            color: #cacaca;
+            border-bottom: 1px dotted #000000;
+        }
+
+        .search-results a.results-sorting:hover {
+            font-size: 12px;
+            font-weight: regular;
+            line-height: 18px;
+            color: #81b3d2;
+            border-bottom: 1px dotted #81b3d2;
+        }
+
+        .search-results a.results-sorting:focus {
+            font-size: 12px;
+            font-weight: regular;
+            line-height: 18px;
+            color: #000000;
+            border-bottom:0px;
+        }
+        .found-hotel a.hotel-name {
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 26px;
+            color: #000000;
+        }
+
+        .found-hotel a.hotel-name:hover {
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 26px;
+            color: #81b3d2;
+        }
+        .found-hotel a.hotel-name:focus {
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 26px;
+            color: #cacaca;
+        }
+
+        .found-hotel .hotel-type,
+        .found-hotel .hotel-price {
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            color: #000000;
+        }
+
+        .found-hotel .rating {
+        font-size: 14px;
+        font-weight: regular;
+        line-height: 21px;
+        color: #666666;
+        }
+
+        .found-hotel a.more-info {
+        /*    weight: 110px;
+            height: 27px;*/
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 21px;
+            color: #ffffff;
+            background-color:#81b3d2;
+        }
+
+        .found-hotel a.more-info:hover {
+        /*    weight: 110px;
+            height: 27px;*/
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 21px;
+            color: #ffffff;
+            background-color:#669ec0;
+        }
+
+        .found-hotel a.more-info:focus {
+        /*    weight: 110px;
+            height: 27px;*/
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 21px;
+            color: #cacaca;
+            background-color:#5496bd;
+        }
+
+        .found-hotel a.booking-button {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 21px;
+            color: #ffffff;
+            background-color:#766357;
+        }
+
+        .found-hotel a.booking-button:hover {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 21px;
+            color: #ffffff;
+            background-color:#604e43;
+        }
+
+        .found-hotel a.booking-button:focus {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 21px;
+            color: #ffffff;
+            background-color:#503e33;
+        }
