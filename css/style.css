@@ -39,11 +39,15 @@
     }
 
     .main-background {
-        weight:1000px;
-        height:510px;
+        with: 1200px;
+        height: 510px;
+        margin-left: ;
+        margin-right: auto;
         background-color:#ffffff;
         background-image:url("../img/background_photo.jpg");
         background-repeat:no-repeat;
+
+
 
     }
     .main-about-sedona-header {
@@ -54,6 +58,7 @@
     }
 
     .visit-Sedona-reasons {
+
         font-size: 14px;
         line-height: 26px;
         text-align:center;
@@ -63,7 +68,10 @@
 
 
     .main-reasons-blue {
+        padding-top: 48px;
         background-color: #81b3d2;
+        text-align: center;
+
 
     }
 
@@ -75,13 +83,15 @@
     }
 
     .reason-number {
-
+        text-align: center;
         font-size: 14px;
         font-weight: normal;
         line-height: 21px;
         color: #333333
     }
     .reason-content {
+    /*padding-left: 60px;
+    padding-right: 60px;*/
     font-size: 14px;
     font-weight: normal;
     line-height: 21px;
@@ -525,6 +535,7 @@
             justify-content: space-around;
             padding-left: 6%;
             padding-right: 6%;
+            margin-bottom: -10px;
 
         }
 
@@ -545,12 +556,36 @@
             text-align: right;
         }
     /*.menu-item:nth-child(4n) {margin-right: 48px; }*/
-        .main-header-ligo {
+        .main-header-logo {
             position:absolute;
-            left 50px;}
+            left: 45%;}
 
-            .main-navigation {
-                position: relative;
+        .main-navigation {
+            position: relative;
                 /*display: flex;*/
 
             }
+        .blue-reason-container {
+            display: flex;
+            padding-left: 6%;
+            padding-right: 6%;
+            margin-bottom: 50px;
+        }
+        .recommendation-container {
+            display: flex;
+            flex-direction:column;
+        }/*не работает почему то*/
+
+        .reason-container {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+
+        .main-about-sedona {
+            width: 240px;
+        text-align: center;
+        padding-left: 67px;
+
+        }
