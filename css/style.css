@@ -2,11 +2,13 @@
 
     }
     body {
-        margin: 0;
+        margin-left: 0px;
+        margin-right: 0px;
         padding: 0;
         font-family:'PT Sans','Arial', sans-serif;
         font-weight: normal;
         text-transform: uppercase;
+        /*box-sizing: border-box;*/
     }
 
      a {
@@ -45,7 +47,7 @@
 
     }
     .main-about-sedona-header {
-        font-size:26px;
+        font-size:21px;
         line-height: 26px;
         text-align:center;
         color:#000000;
@@ -516,3 +518,39 @@
             color: #ffffff;
             background-color:#503e33;
         }
+        /*сетки*/
+        .site-navigation {
+            /*background-color:#e5bdde;*/
+            display:flex;
+            justify-content: space-around;
+            padding-left: 6%;
+            padding-right: 6%;
+
+        }
+
+        .menu-item {
+
+            width:20%;
+            padding-top:20px;
+            padding-bottom: 20px;
+
+
+            /*background-color: #eaecb5;*/
+            text-align: left;
+
+
+        }
+        .menu-item:nth-child(3),
+        .menu-item:nth-child(4) {
+            text-align: right;
+        }
+    /*.menu-item:nth-child(4n) {margin-right: 48px; }*/
+        .main-header-ligo {
+            position:absolute;
+            left 50px;}
+
+            .main-navigation {
+                position: relative;
+                /*display: flex;*/
+
+            }
