@@ -11,7 +11,7 @@
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
-                    <img src="img/logo.png" width="136px" height="70px" alt="Логотип Седоны">
+                    <img src="img/logo.png" width="138px" height="70px" alt="Логотип Седоны">
                 </a>
                 <ul class="site-navigation">
                     <li class="menu-item"><a class="menu-item-ref" href="#">Информация</a></li>
@@ -24,38 +24,74 @@
         <main class="container">
             <section class="search-hotel">
                 <form class="search-hotel-form" action="http://echo.htmlacademy.ru" method="get">
-                    <h2 class="infrastructure">Инфраструктура:</h2>
-                    <input class="filter-checkbox" type="checkbox" name="pool" id="pool"><label for="pool">бассейн</label>
-                    <input class="filter-checkbox" type="checkbox" name="parking" id="parking"><label for="parking">парковка</label>
-                    <input class="filter-checkbox" type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">wi-fi</label>
-                    <h2 class="accomodation-type">Тип жилья:</h2>
-                    <input class="filter-checkbox" type="checkbox" name="hotel" id="hotel"><label for="hotel">гостиница</label>
-                    <input class="filter-checkbox" type="checkbox" name="motel" id="motel"><label for="motel">мотель</label>
-                    <input class="filter-checkbox" type="checkbox" name="appartments" id="appartments"><label for="appartments">аппартаменты</label><br>
-                    <label class="day-price" for="min-day-price-field">стоимость в сутки(р):
-                        <input class="min-price-field" type="text" placeholder="от 0">
-                        <input class="max-price-field" type="text" placeholder="до 3000">
-                    </label>
-                    <label for="min-day-price" class="visually-hidden" >Минимальная цена в сутки</label>
-                    <input class="filter-range" type="range" name="min-day-price" id="min-day-price" min="0" max="100000" step="100">
-                    <!--Здесь должен быть бегунок для макисмальной цены-->
-                    <button class="show-search-results" type="submit">Показать</button>
+                        <div class="filter-list">
+                            <h2 class="infrastructure">Инфраструктура:</h2>
+                        <div class="checkbox-item">
+                            <input class="filter-checkbox" type="checkbox" name="pool" id="pool">
+                            <label for="pool">бассейн</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input class="filter-checkbox" type="checkbox" name="parking" id="parking">
+                            <label for="parking">парковка</label>
+                        </div>
+                        <div class="checkbox-item">
+                                <input class="filter-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                                <label for="wi-fi">wi-fi</label>
+                        </div>
+                    </div>
+                    <div class="filter-list">
+                        <h2 class="accomodation-type">Тип жилья:</h2>
+                        <div class="checkbox-item">
+                            <input class="filter-checkbox" type="checkbox" name="hotel" id="hotel">
+                            <label for="hotel">гостиница</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input class="filter-checkbox" type="checkbox" name="motel" id="motel">
+                            <label for="motel">мотель</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input class="filter-checkbox" type="checkbox" name="appartments" id="appartments">
+                            <label for="appartments">аппартаменты</label>
+                        </div>
+                    </div>
+                    <div class="filter-list"> <!--filter-ranege-->
+                         <div class="filter-list-title">Стоимость в сутки (р):</div>
+                            <div class="day-price-container"><!--price controls-->
+                                <label class="min-price">от <input class="price-field" type="text" value="0"></label>
+                                <label class="max-price">до <input class="price-field" type="text" value="3000"></label>
+                            </div>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+                        </div>
+                        <button class="btn-transparent" type="submit">Показать</button>
+                    </div>
                 </form>
             </section>
             <section class="search-results">
-                <h1 class="search-results-number">Найдено:3</h1>
-                <p class="result-sorting">сортировка:</p>
-                <a class="current-results-sorting" href="#">по цене</a>
-                <a class="results-sorting" href="#">по типу</a>
-                <a class="results-sorting" href="#">по рейтингу</a>
-                <a class="ascending-sorting" href="#">
-                    <img class="arrow-active-sorting" src="img/svg-sedona/icon-down-dir.svg" width="14" height="14" alt="сортировка по возрастанию">
-                </a>
-                <a class="descending-sorting" href="#">
-                    <img class="arrow-noactive-sorting" src="img/svg-sedona/icon-up-dir.svg" width="14" height="14" alt="сортировка по убыванию">
-                </a>
+                <div class="sorting-container">
+                    <div class="sorting-type">
+                    <p class="search-results-number">Найдено:3</p>
+                        <p class="result-sorting">сортировка:</p>
+                        <a class="current-results-sorting" href="#">по цене</a>
+                        <a class="results-sorting" href="#">по типу</a>
+                        <a class="results-sorting" href="#">по рейтингу</a>
+                    </div>
+                    <div class="sorting-arrows">
+                        <a class="ascending-sorting" href="#">
+                            <img class="arrow-active-sorting" src="img/svg-sedona/icon-down-dir.svg" width="14" height="14" alt="сортировка по возрастанию">
+                        </a>
+                        <a class="descending-sorting" href="#">
+                            <img class="arrow-noactive-sorting" src="img/svg-sedona/icon-up-dir.svg" width="14" height="14" alt="сортировка по убыванию">
+                        </a>
+                    </div>
+                </div>
                 <section class="found-hotel">
                     <div class="hotel-photo">  <img src="img/amara_resort.png" width="100" height="100" alt="Amara Resort&Spa"></div>
+
                     <a class="hotel-name" href="#">Amara Resort_&_Spa</a><!--сделала через нижний слэш, т.к. иначе atom некорректно отображает-->
                     <div class="hotel-squares-number">  <img src="img/4_squares.png" width="50" height="10" alt="4 звезды"></div>
                     <p class="hotel-type">Гостиница</p>
@@ -86,16 +122,31 @@
                 </section>
             </section>
         </main>
-        <footer class="main-footer">
+        <footer class="main-footer container">
             <p class="footer-sedona-tag">#visitsedona</p>
             <ul class="footer-social">
-                <li><a class="social-button twitter" href="#">Twitter</a></li>
-                <li><a class="social-button fb" href="#">Facebook</a></li>
-                <li><a class="social-button ytube" href="#">youtube</a></li>
+                <li>
+                    <a class="social-button" href="#">
+                        <img src="img/svg-sedona/twitter.svg" width="19px" height="22px" alt="twitter"></img>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                        <img src="img/svg-sedona/fb-icon.svg" width="19px" height="22px" alt="facebook"></img>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                        <img src="img/svg-sedona/youtube.svg" width="19px" height="22px" alt="youtube"></img>
+                    </a>
+                </li>
             </ul>
-                <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="footer-copyright-img" src="img/svg-sedona/logo-htmlacademy.svg" width=70 height=30 alt="website by HTML ACADEMY">
+            <div class="copyright-container">
+                <p class="copyright-text">website by </p>
+                <a class="copyright-ref" href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img class="footer-copyright-img" src="img/svg-sedona/logo-htmlacademy.svg" width=116 height=41 alt="website by HTML ACADEMY">
                 </a>
-            </p>
+                </p>
+            </div>
         </footer>
     </body
