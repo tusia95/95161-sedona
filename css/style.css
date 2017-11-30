@@ -20,9 +20,9 @@
     }
 
     .container {
-        width: 1200px;
+        width: 1054px;
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0 73px;
     }
 
     .site-navigation {
@@ -44,19 +44,14 @@
     }
     /*сетки*/
     .site-navigation {
-        width: 1200px;
         display:flex;
-        justify-content: space-around;
-        padding-left: 6%;
-        padding-right: 6%;
+        /*padding-left: 6%;
+        padding-right: 6%;*/
         margin-bottom: -10px;
         }
 
     .menu-item {
-        width:200px;
-        padding-top:20px;
-        padding-bottom: 20px;
-        /*background-color: #eaecb5;*/
+        width:25%;
         text-align: left;
     }
 
@@ -67,18 +62,19 @@
 
     .main-header-logo {
         position:absolute;
-        left: 630px;}
+        left: 45%;}
 
     .main-navigation {
         position: relative;
-            /*display: flex;*/
+    /*    width: 1200px;*/
+        padding-bottom:20px;
         }
 
     .main-background {
         box-sizing: border-box;
         width: 1200px;
         height: 510px;
-        padding-left: 373px;
+        /*padding-left: 373px;*/
         padding-top: 78px;
 
         background-image:url("../img/background_photo.jpg");/*фото, картинка с текстом зашита в html*/
@@ -112,20 +108,20 @@
 
     .blue-reason-container {
         display: flex;
-        box-sizing: border-box;
-        width: 1200px;
+        /*box-sizing: border-box;
+        width: 1200px;*/
 
     }
 
     .content-image {
-        width: 67%;
+        width: 800px;
     }
 
     .main-reasons-blue {
         box-sizing: border-box;
         width: 400px;/*не получается сделать размер ровно 400, почему?*/
-        padding-left:6%;
-        padding-right: 6%;
+        /*padding-left:6%;
+        padding-right: 6%;*/
         padding-top: 28px;
         text-align: center;
         background-color: #81b3d2;
@@ -143,7 +139,7 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
-    width: 1200px;
+    /*width: 1200px;*/
     margin-bottom: 58px;
     background-color: #eeeeee;
 }
@@ -151,9 +147,9 @@
    .reasons {
        padding-top: 50px;
         padding-bottom: 63px;
-        padding-left: 6%;
-        padding-right: 6%;
-        width: 33%;
+        /*padding-left: 6%;
+        padding-right: 6%;*/
+        width: 400px;
         text-align: center;
     }
 
@@ -173,25 +169,25 @@
         font-weight: normal;
         line-height: 21px;
         color: #333333;
-            text-align: center;
+        text-align: center;
     }
 
     /*.reasons*/ .reason-content {
-    width: 266px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 21px;
-    color: #333333;
-    text-align: center;
+        width: 266px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 21px;
+        color: #333333;
+        text-align: center;
 
     }
 
       .recommendation-container {
           display: flex;
-      justify-content: space-between;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      }/*не работает почему то*/
+          justify-content: space-between;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          }/*не работает почему то*/
 
       .sedona-recommendation {
           width: 300px;
@@ -279,7 +275,7 @@
     }
 
     .footer-sedona-tag {
-        width: 33%;
+        width: 400px;
         text-align: center;
         font-size: 21px;
         font-weight: bold;
@@ -288,7 +284,7 @@
     }
 
     .footer-social {
-        width: 33%;
+        width: 400px;
         list-style-type:none;
         display: flex;
         justify-content:center;
@@ -315,7 +311,7 @@
     .copyright-container {
         display:flex;
         justify-content: center;
-        width: 33%;
+        width: 400px;
         margin: 20px;
 
     }
@@ -728,11 +724,47 @@
         .sorting-arrows {
             margin-left: auto;
         }
-        .found-hotel a.hotel-name {
+
+        .found-hotel {
+            width: 1200px;
+            min-width: 91px;
+            display:flex;
+            padding-left: 6%;
+            padding-right: 6%;
+            padding-top: 28px;
+            padding-bottom: 30px;
+            justify-content: flex-start;
+
+
+        }
+
+        .hotel-info-container {
+            width: 250px;
+            height: 91px;
+            padding-left:32px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #008866;
+
+        }
+
+        .hotel-wrapper {
+            height: 26px;
+            display: flex;
+            align-items: baseline;
+            background-color: #002233
+        }
+
+
+
+
+
+            a.hotel-name {
             font-size: 21px;
             font-weight: bold;
             line-height: 26px;
             color: #000000;
+            background-color: #661188;
         }
 
         .found-hotel a.hotel-name:hover {
@@ -764,8 +796,9 @@
         }
 
         .found-hotel a.more-info {
-        /*    weight: 110px;
-            height: 27px;*/
+
+            padding-left: 17px;
+            padding-right: 17px;
             font-size: 14px;
             font-weight: bold;
             line-height: 21px;
@@ -794,6 +827,8 @@
         }
 
         .found-hotel a.booking-button {
+            padding-left: 17px;
+            padding-right: 17px;
             font-size: 14px;
             font-weight: bold;
             line-height: 21px;

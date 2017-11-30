@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="container">
         <header class="main-header">
             <nav class="main-navigation">
                 <div class="logo-menu-item">
@@ -25,15 +26,15 @@
         </header>
         <main class="main-container">
             <h1 class="visually-hidden">Седона</h1>
-            <div class="main-background container">
+            <div class="main-background">
                 <img src="img/background_text.png" width="460px" height="350px" alt="Welcome to the gorgeous.Sedona">
             </div>
-            <section class="main-about-sedona container">
+            <section class="main-about-sedona">
                 <h2 class="main-about-sedona-header">Седона небольшой городок в Аризоне,заслуживающий большего</h2>
                 <p class="visit-sedona-reasons">рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </section>
-            <div class="blue-reason-container container">
-                <section class="main-reasons-blue container">
+            <div class="blue-reason-container">
+                <section class="main-reasons-blue">
                     <h3 class="reason-header colored-header">Настоящий городок</h3>
                     <span class="reason-number colored-number">—№1—</span>
                     <p class="reason-content colored-content">Седона-не аттракцион для туристов, там течет своя жизнь</p>
@@ -42,7 +43,7 @@
                     <img src="img/sedona_building.jpg" width="800px" height="256px" alt="Здание в Седоне"></img>
                 </div>
             </div>
-            <div class="recommendation-container container">
+            <div class="recommendation-container">
                 <section class="sedona-recommendation accomodation-recommendation">
                     <h3 class="sedona-recommendation-header ">Жилье</h3>
                     <p class="sedona-recommendation-content">Рекомендуем пожить в настоящем мотеле.Все как в кино!</p>
@@ -56,7 +57,7 @@
                     <p class="sedona-recommendation-content">Не только китайского, но и местного производства</p>
                 </section>
             </div>
-            <div class="blue-reason-container container">
+            <div class="blue-reason-container">
                 <div class="content-image">
                     <img src="img/devils_bridge.jpg" width="800" height="255px" alt="Мост дьявола в Седоне">
                 </div>
@@ -66,7 +67,7 @@
                     <p class="reason-content colored-content">Да, по нему можно пройти!Если конечно вы осмелитесь</p>
                 </section>
             </div>
-            <div class="reason-container container">
+            <div class="reason-container">
                 <section class= "reasons">
                     <h3 class= "reason-header">Небольшая площадь</h3>
                     <span class= "reason-number">—№3—</span>
@@ -84,14 +85,14 @@
                 </section>
             </div>
             <div "hotel-search-container">
-                <section class="hotel-search container">
+                <section class="hotel-search">
                     <h3 class="hotel-search-header">Заинтересовались?</h3>
                     <p class="hotel-search-dates">Укажите предполагаемые даты поездки,</br>и мы покажем вам лучшие предложение в Седоне</p>
                 </section>
                 <div class="hotel-search-btn">
                     <a class="hotel-search-ref" href="#">поиск гостиницы в седоне</a>
                 </div>
-                <div class="sedona-map container">
+                <div class="sedona-map">
                     <img class="sedona-map-img" src="img/map.jpg" width="1200" height="473" alt="Карта Седоны">
                 </div>
             </div>
@@ -124,7 +125,9 @@
                 </p>
             </div>
         </footer>
-        <form class="search-hotel-form-main container"  action="https://echo.htmlacademy.ru" method="get">
+        </div>
+        <div class="container">
+        <form class="search-hotel-form-main"  action="https://echo.htmlacademy.ru" method="get">
             <div class="dates">
                 <label for "arrival-date">Дата заезда:</label><input type="date" id="arrival-date" name="arrival-date" placeholder="24 апреля 2017"><!--placeholder с таким типам поля не работает, как задать значение как в макете-->
                 <label for "hotel-arrival-calendar" class="visually-hidden">Календарь для выбора даты заезда</label>
@@ -155,5 +158,6 @@
             </div>
                 <input type="submit" class="search-hotel-button" name="search-hotel-form-submit" value="найти">
         </form>
+        </div>
     </body>
 </html>
