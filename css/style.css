@@ -20,9 +20,9 @@
     }
 
     .container {
-        width: 1054px;
+        width: 1200px;
         margin: 0 auto;
-        padding: 0 73px;
+        padding: 0 0;
     }
 
     .site-navigation {
@@ -65,6 +65,8 @@
         left: 45%;}
 
     .main-navigation {
+        padding-left: 6%;
+        padding-right: 6%;
         position: relative;
     /*    width: 1200px;*/
         padding-bottom:20px;
@@ -72,9 +74,10 @@
 
     .main-background {
         box-sizing: border-box;
-        width: 1200px;
         height: 510px;
+        display: flex;
         /*padding-left: 373px;*/
+        justify-content: center;
         padding-top: 78px;
 
         background-image:url("../img/background_photo.jpg");/*фото, картинка с текстом зашита в html*/
@@ -82,27 +85,33 @@
         margin-bottom: 50px;
     }
 
+
+
+
     .main-about-sedona {
-        width: 560px;
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 58px;
         padding-top: 30px;
 
     }
 
     .main-about-sedona-header {
-        /*max-width: 200px;*/
+
         margin-bottom: 38px;
         font-size:21px;
         font-weight: bold;
         line-height: 26px;
         color:#000000;
         text-align: center;
+
     }
 
     .visit-sedona-reasons {
         font-size: 14px;
         line-height: 26px;
-        /*text-align:center;*/
+        text-align:center;
         color: #333333;
     }
 
@@ -174,12 +183,13 @@
 
     /*.reasons*/ .reason-content {
         width: 266px;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 14px;
         font-weight: normal;
         line-height: 21px;
         color: #333333;
         text-align: center;
-
     }
 
       .recommendation-container {
@@ -229,6 +239,7 @@
         font-weight: bold;
         line-height: 36px;
         color: #333333;
+        text-align: center;
     }
 
     .hotel-search-dates {
@@ -239,7 +250,7 @@
     }
 
     .hotel-search {
-        max-width: 450px;
+
         text-align: center;
 
 
@@ -325,6 +336,8 @@
 
 .search-hotel-form-main {
     width: 460px;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 283px;
     display: flex;
     flex-direction: column;
