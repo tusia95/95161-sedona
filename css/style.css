@@ -11,6 +11,16 @@
         /*box-sizing: border-box;*/
     }
 
+    p {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
      a {
         text-decoration: none;
         font-size: 14px;
@@ -506,8 +516,9 @@
 /****************************форма поиска************************/
         .search-hotel-form {
             min-height: 187px;
-            padding: 15px;
-            padding-left:6%;
+            /*padding: 15px;*/
+            /*padding-left:6%;*/
+            margin-bottom: 33px;
             background-image:url("../img/filter_background.png");
             background-repeat: no-repeat;
             display: flex;
@@ -614,9 +625,6 @@
          left: 0;
         }
 
-
-
-
         .range-toggle-min {
           left: 0;
         }
@@ -672,10 +680,9 @@
             display:flex;
             padding-left:6%;
             padding-right: 6%;
-
-
             align-items: baseline;
         }
+
         .sorting-type {
             width: 530px;
             display: flex;
