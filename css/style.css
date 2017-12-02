@@ -57,7 +57,7 @@
         display:flex;
         /*padding-left: 6%;
         padding-right: 6%;*/
-        margin-bottom: -10px;
+
         }
 
     .menu-item {
@@ -127,8 +127,8 @@
 
     .blue-reason-container {
         display: flex;
-        /*box-sizing: border-box;
-        width: 1200px;*/
+        background-color: #81b3d2;
+
 
     }
 
@@ -142,8 +142,9 @@
         /*padding-left:6%;
         padding-right: 6%;*/
         padding-top: 28px;
+        padding-bottom: 20px;
         text-align: center;
-        background-color: #81b3d2;
+
     }
 
 
@@ -287,16 +288,27 @@
 
     }
 
-    .main-footer {
-        margin-bottom:10px;
-        /*margin-left: auto;
-        margin-right: 40px;*/
+/*    .main-footer {
+        display: flex;
+        min-height: 120px;
+        align-items: baseline;
         background-color:#f9fbf6;
 
-    }
+    }*/
+    .main-footer {
+        min-height: 123px;
+        width 1200px;
+        margin-top:38px;
+        display:flex;
+        justify-content:space-around;
+        align-items: baseline;
+        background-color: transparent;
+}
+
 
     .footer-sedona-tag {
         width: 400px;
+        min-height: 50px;
         text-align: center;
         font-size: 21px;
         font-weight: bold;
@@ -306,17 +318,12 @@
 
     .footer-social {
         width: 400px;
+        min-height: 50px;
         list-style-type:none;
         display: flex;
-        justify-content:center;
-
+        justify-content: center;
     }
 
-        .main-footer {
-            display:flex;
-            justify-content:space-around;
-            background-color: transparent;
-    }
 
     .social-button {
         box-sizing:border-box;
@@ -326,20 +333,20 @@
         height: 46px;
         margin-left: 5px;
         padding-top: 10px;
-
         background-color: #81b3d2;
     }
     .copyright-container {
         display:flex;
         justify-content: center;
+        align-items:flex-start;
         width: 400px;
-        margin: 20px;
-
     }
 
     .copyright-ref {
         margin-left: 5px;
-
+    }
+    .copyright-text {
+        padding-top: 10px;
     }
 
 /*----------------форма главной----------*/
@@ -516,8 +523,9 @@
 /****************************форма поиска************************/
         .search-hotel-form {
             min-height: 187px;
-            /*padding: 15px;*/
-            /*padding-left:6%;*/
+            width: 1100px;
+            padding: 15px;
+            padding-left:6%;
             margin-bottom: 33px;
             background-image:url("../img/filter_background.png");
             background-repeat: no-repeat;
@@ -529,9 +537,14 @@
         }
 
         .filter-list {
-        width: 330px;
+            width: 240px;
         color: #ffffff;
         text-transform: uppercase;
+        }
+
+        .filter-list:last-child {
+            width: 330px;
+            margin-left: 220px;
         }
 
         .filter-list-title {
@@ -565,11 +578,10 @@
 
         .day-price-container label {
           display: inline-block;
-         padding-top: 5px;
+          padding-top: 5px;
           font-size: 14px;
           line-height: 38px;
           vertical-align: top;
-
           cursor: pointer;
         }
 
@@ -637,7 +649,6 @@
           display: block;
           margin: 0 auto;
           padding: 6px 35px;
-
           font-size: 14px;
           line-height: 20px;
           color: #ffffff;
@@ -680,6 +691,7 @@
             display:flex;
             padding-left:6%;
             padding-right: 6%;
+            margin-bottom: 35px;
             align-items: baseline;
         }
 
@@ -753,18 +765,32 @@
             padding-right: 6%;
             padding-top: 28px;
             padding-bottom: 30px;
-            justify-content: flex-start;
-
-
+            border-top: 1px solid #e5e5e5;
         }
 
+        .found-hotel:last-child {
+        border-bottom: 1px solid #e5e5e5;
+        }
+
+        .hotel-level {
+            width:110px;
+            height: 91px;
+            margin-left: 524px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+
+
         .hotel-info-container {
-            width: 250px;
+            width: 262px;
             height: 91px;
             padding-left:32px;
             display: flex;
             flex-wrap: wrap;
-            background-color: #008866;
+
 
         }
 
@@ -772,19 +798,28 @@
             height: 26px;
             display: flex;
             align-items: baseline;
-            background-color: #002233
+        }
+
+        .hotel-wrapper p:first-child,
+        .hotel-wrapper a:first-child {
+            width:115px;
+        }
+
+        .hotel-wrapper p:last-child,
+        .hotel-wrapper a:last-child {
+            width: 140px;
         }
 
 
 
-
-
+        .hotel-price {
+            margin-left: 6px;
+        }
             a.hotel-name {
             font-size: 21px;
             font-weight: bold;
             line-height: 26px;
             color: #000000;
-            background-color: #661188;
         }
 
         .found-hotel a.hotel-name:hover {
@@ -809,21 +844,26 @@
         }
 
         .found-hotel .rating {
+        width: 110px;
         font-size: 14px;
         font-weight: regular;
         line-height: 21px;
         color: #666666;
+        background-color:#f2f2f2;
+        text-align: center;
         }
 
         .found-hotel a.more-info {
-
-            padding-left: 17px;
-            padding-right: 17px;
+            padding-top: 3px;
+            padding-bottom: 5px;
+            /*padding-left: 17px;
+            padding-right: 17px;*/
             font-size: 14px;
             font-weight: bold;
             line-height: 21px;
             color: #ffffff;
             background-color:#81b3d2;
+            text-align: center;
         }
 
         .found-hotel a.more-info:hover {
@@ -847,13 +887,17 @@
         }
 
         .found-hotel a.booking-button {
-            padding-left: 17px;
-            padding-right: 17px;
+            padding-top: 3px;
+            padding-bottom: 5px;
+        /*    padding-left: 17px;
+            padding-right: 17px;*/
+            margin-left: 6px;
             font-size: 14px;
             font-weight: bold;
             line-height: 21px;
             color: #ffffff;
             background-color:#766357;
+            text-align: center;
         }
 
         .found-hotel a.booking-button:hover {
