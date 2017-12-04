@@ -101,7 +101,7 @@
                      <input type="date" id="arrival-date" name="arrival-date" placeholder="24 апреля 2017">
                      <label class="calendar">
                         <input class="visually-hidden" type="button" name="hotel-arrival-calendar" id="hotel-arrival-calendar">
-                        <span class="calendar-btn">
+                        <span class="calendar-btn-arrival">
                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                               <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
                               <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z">
@@ -111,10 +111,11 @@
                      </label>
                      <!--<label for "hotel-arrival-calendar" class="visually-hidden">Календарь для выбора даты заезда</label>-->
                      <label for "departure-date">Дата выезда:</label>
-                     <input type="date" id="departure-date" name="departure-date" placeholder="4 июля 2017">
-                     <label class="calendar">
+                     <div class="date-input-container">
+                         <input type="date" id="departure-date" name="departure-date" placeholder="4 апреля 2017">
+                         <label class="calendar">
                         <input class="visually-hidden" type="button" name="hotel-departure-calendar" id="hotel-arrival-calendar">
-                        <span class="calendar-btn">
+                        <span class="calendar-btn-departure">
                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                               <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
                               <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z">
@@ -122,6 +123,7 @@
                            </svg>
                         </span>
                      </label>
+                 </div>
                   </div>
                   <!--<label for "hotel-departure-calendar" class="visually-hidden">Календарь для выбора даты выезда</label>-->
                   <div class= "age-container">
@@ -134,7 +136,7 @@
                      <label for "child-number" class="guests-label child-label">Дети:</label>
                      <label for="hotel-minus-child" class="visually-hidden">уменьшить количество детей</label>
                      <input class="arithmetic-sign minus" type="button" name="hotel-minus-child" id="hotel-minus-child" value="-">
-                     <input type="number" id="child-number" name="child-number" min="0" step="1" value="" placeholder="0">
+                     <input type="number" id="child-number" name="child-number" min="0" step="1" value="0" placeholder="0">
                      <label for="hotel-plus-child" class="visually-hidden">увеличить количество детей</label>
                      <input class="arithmetic-sign plus" type="button" name="hotel-plus-child" id="hotel-plus-child" value="+">
                   </div>
@@ -148,7 +150,8 @@
          <img class="sedona-map-img" src="img/map.jpg" width="1200" height="473" alt="Карта Седоны">
          </div>-->
       </main>
-      <footer class="main-footer">
+      <div class="footer-container">
+      <footer class="footer-positioned main-footer">
          <p class="footer-sedona-tag">#visitsedona</p>
          <ul class="footer-social">
             <li>
@@ -188,6 +191,7 @@
             </a>
          </div>
       </footer>
+  </div>
       <script>
         /* var link = document.querySelector(".hotel-search-ref");
          link.addEventListener("click", function (evt) { evt.preventDefault();
