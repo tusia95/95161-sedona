@@ -34,6 +34,7 @@
         margin: 0px;}
 
     .container {
+        position:relative;
         width: 1200px;
         margin: 0 auto;
         padding: 0 0;
@@ -48,9 +49,13 @@
 
     .site-navigation a:hover {
         color:#81b3d2;
-
     }
+
     .site-navigation a:focus {
+        color:#766357;
+    }
+
+    .hotels .sedona-hotels a {
         color:#766357;
     }
     .hotel-search-btn a:hover {
@@ -257,6 +262,9 @@
     }
 
     .hotel-search-dates {
+        width:450px;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 14px;
         line-height: 24px;
         color: #333333;
@@ -265,8 +273,6 @@
     .hotel-search {
         text-align: center;
         margin-bottom: 50px;
-
-
     }
 
     .hotel-search-btn {
@@ -276,7 +282,6 @@
         height: 86px;
         text-align: center;
         background-color:#766357;
-
     }
 
     .hotel-search-ref {
@@ -292,7 +297,7 @@
 
 .main-footer {
     min-height: 123px;
-    width: 1200px;
+    min-width: 1200px;;
     /*margin-top:38px;*/
     display:flex;
     justify-content:space-around;
@@ -303,8 +308,8 @@
     .footer-positioned {
         position:absolute;
         bottom:0px;
-        left:75px;
-
+        left:0px;
+        /*right:-73px;*/
 }
 
 
@@ -361,6 +366,15 @@
     .copyright-ref {
         margin-left: 5px;
     }
+
+    .copyright-ref:hover path {
+        fill:#81b3d2;
+    }
+
+    .copyright-ref:focus path {
+        fill:#bdbbbc;
+    }
+
     .copyright-text {
         padding-top: 10px;
     }
@@ -370,6 +384,9 @@
   display: none;
 }
 
+.modal {
+    display:block
+}
 
 .search-hotel-form-main {
     position: absolute;
@@ -383,12 +400,17 @@
     padding-left: 58px;
     padding-right: 58px;
     background-color: #ffffff;
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
     /*background-image: url("..img/map.jpg");*/
 }
 
 .sedona-google-map {
     position: relative;
+}
 
+.google-map {
+    border:0;
+    frameborder:0;
 
 }
 
@@ -408,12 +430,11 @@
         display: flex;
         align-items: center;
         margin-bottom: 54px;
-
     }
 
-    .search-hotel-form-main input[type="date"]
+    .search-hotel-form-main input[type="text"]
     {
-        width: 310px;
+        width: 343px;
         margin-left: 24px;
         min-height: 40px;
         border:0px;
@@ -422,12 +443,12 @@
     }
 
 
-    .search-hotel-form-main input[type="date"]:hover,
+    .search-hotel-form-main input[type="text"]:hover,
     .search-hotel-form-main input[type="number"]:hover {
         background-color: #ebebeb;
     }
 
-    .search-hotel-form-main input[type="date"]:focus,
+    .search-hotel-form-main input[type="text"]:focus,
     .search-hotel-form-main input[type="number"]:focus {
         background-color: #ffffff;
         border: 1px solid #e5e5e5;
@@ -450,7 +471,9 @@
         border:0px;
         outline: 0px;
     }
-
+.calendar input[type="button"]:focus path {
+    fill:#000000;
+}
 
 
 /*    .calendar input[type=button] + .calendar-btn-arrival {
@@ -465,14 +488,14 @@
 
     .calendar-btn-arrival {
         position:absolute;
-        top:60px;
-        left: 452px;
+        top:7px;
+        left: 338px;
     }
 
     .calendar-btn-departure {
         position:absolute;
         top:7px;
-        left: 305px;
+        left: 338px;
     }
 
     .dates input[type="date"]{
@@ -488,7 +511,7 @@
         text-align: center;
     }
 
-     .arithmetic-sign {
+     .age-container input[type="button"] {
         width: 35px;
         height: 42px;
         font-size:21px;
@@ -496,6 +519,14 @@
         border:0px;
         background-color:#f2f2f2;
     }
+
+ .age-container input[type="button"]:hover {
+     color:#000000;
+ }
+ .age-container input[type="button"]:focus {
+     color:#81b3d2;
+ }
+
 
     .age-container .minus {
         margin-left: 40px;
@@ -765,6 +796,7 @@
           border-color: #663d15;
           outline: thin dotted;
           outline: 5px auto -webkit-focus-ring-color;
+
         }
 
         .search-hotel-form .infrastructure,
@@ -853,6 +885,26 @@
 
         .sorting-arrows {
             margin-left: auto;
+        }
+
+        .sorting-arrows a.ascending-sorting path {
+            fill:#cacaca;
+        }
+
+        .sorting-arrows a.ascending-sorting:hover path {
+            fill:#000000;
+        }
+
+        .sorting-arrows a.ascending-sorting:focus path {
+            fill:#81b3d2;
+        }
+
+        .sorting-arrows a.descending-sorting path {
+            fill:#81b3d2;
+        }
+
+        .sorting-arrows a.descending-sorting {
+            margin-left:10px;
         }
 
         .found-hotel {
