@@ -423,9 +423,10 @@ h3 {
     position: absolute;
     top: 0px;
     left: 312px;
-    width: 462px;
-    margin-left: auto;
-    margin-right: auto;
+    box-sizing: border-box;
+    width: 575px;
+    /*margin-left: auto;
+    margin-right: auto;*/
     min-height: 283px;
     padding-top: 54px;
     padding-left: 58px;
@@ -446,12 +447,13 @@ h3 {
 }
 
 .form-container {
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
     align-content: space-between;
     align-items: baseline;
-    width: 455px;
+
     height: 110px;
     margin-bottom: 25px;
 }
@@ -463,8 +465,8 @@ h3 {
 }
 
 .search-hotel-form-main input[type="text"] {
-    width: 325px;
-    margin-left: 24px;
+    width: 330px;
+    margin-left: 20px;
     padding-left: 12px;
     min-height: 40px;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -479,6 +481,7 @@ h3 {
 .search-hotel-form-main input[type="text"]:hover,
 .search-hotel-form-main input[type="number"]:hover {
     background-color: #ebebeb;
+
 }
 
 .search-hotel-form-main input[type="text"]:focus,
@@ -488,14 +491,14 @@ h3 {
 }
 
 .search-hotel-form-main label {
+    min-width: 95px;
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
-    /*margin-top: 14px;*/
 }
 
 .search-hotel-form-main button {
-    width: 26px;
+    width: 30px;
     height: 26px;
     border: 0px;
     background-color: transparent;
@@ -512,23 +515,13 @@ h3 {
 .calendar-btn-arrival {
     position: absolute;
     top: 64px;
-    left: 476px;
+    left: 475px;
 }
 
 .calendar-btn-departure {
     position: absolute;
     top: 129px;
-    left: 476px;
-}
-
-.serach-hotel-form-main input[type="text"] {
-    position: relative;
-    font-size: 14px;
-    line-height: 26px;
-    font-family: inherit;
-    text-transform: uppercase;
-    font-weight: regular;
-    text-align: center;
+    left: 475px;
 }
 
 .search-hotel-form-main input[type="number"] {
@@ -560,11 +553,11 @@ h3 {
 }
 
 .age-container .minus {
-    margin-left: 40px;
+ margin-left: 22px;;
 }
 
 .age-container .child-label {
-    margin-left: 52px;
+    text-align: right;
 }
 
 .arithmetic-sign {
