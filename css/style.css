@@ -26,6 +26,8 @@ a {
     font-weight: bold;
     color: #000000;
     line-height: 26px;
+    padding: 0px;
+    margin: 0px;
 }
 
 h1,
@@ -331,7 +333,7 @@ h3 {
     height: 121px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+   align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -343,7 +345,7 @@ h3 {
 }
 
 .footer-sedona-tag {
-    margin-top: 10px;
+    margin-top: 13px;
     width: 400px;
     min-height: 50px;
     text-align: center;
@@ -388,6 +390,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 4px;
     width: 400px;
 }
 
@@ -404,7 +407,8 @@ h3 {
 }
 
 .copyright-text {
-    padding-top: 10px;
+    padding-top:15px;
+    font-size: 14px;
 }
 
 
@@ -446,7 +450,7 @@ h3 {
     justify-content: flex-start;
     align-content: space-between;
     align-items: baseline;
-    width: 458px;
+    width: 455px;
     height: 110px;
     margin-bottom: 25px;
 }
@@ -589,7 +593,7 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     background-color: #81b3d2;
-    border: 0px;
+    border:none;
 }
 
 .search-hotel-form-main input.search-hotel-button:hover {
@@ -625,7 +629,7 @@ h3 {
 }
 
 .filter-list {
-    width: 260px;
+    width: 259px;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -683,8 +687,11 @@ h3 {
 .day-price-container input {
     width: 50px;
     margin: 0;
-    color: inherit;
-    font: inherit;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
     background: none;
     border: none;
 }
@@ -740,6 +747,7 @@ h3 {
     display: block;
     margin: 0 auto;
     padding: 6px 35px;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -765,7 +773,12 @@ h3 {
 .filter-checkbox {
     position: relative;
     cursor: pointer;
-    padding-left: 35px;
+    padding-left: 38px;
+
+}
+
+.filter-list:nth-child(2) .checkbox-item .filter-checkbox {
+    padding-left:43px;
 }
 
 .filter-checkbox input[type="checkbox"]+.checkbox-indicator {
@@ -823,7 +836,7 @@ h3 {
     display: flex;
     padding-left: 6%;
     padding-right: 6%;
-    margin-bottom: 31px;
+    margin-bottom: 28px;
     align-items: baseline;
 }
 
@@ -922,8 +935,8 @@ h3 {
     display: flex;
     padding-left: 6%;
     padding-right: 6%;
-    padding-top: 24px;
-    padding-bottom: 33px;
+    padding-top: 26px;
+    padding-bottom: 30px;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -933,7 +946,7 @@ h3 {
 
 .hotel-level {
     width: 110px;
-    min-height: 91px;
+    min-height: 87px;
     margin-left: 524px;
     display: flex;
     flex-direction: column;
@@ -943,16 +956,22 @@ h3 {
 
 .hotel-info-container {
     width: 262px;
-    min-height: 91px;
+    min-height: 90px;
     padding-left: 32px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .hotel-wrapper {
-    height: 26px;
+    height: 32px;
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    /*background-color: #220011;*/
+
+}
+
+.hotel-wrapper a {
+    margin-top: 7px;
 }
 
 .hotel-wrapper p:first-child,
@@ -962,7 +981,11 @@ h3 {
 
 .hotel-wrapper p:last-child,
 .hotel-wrapper a:last-child {
-    width: 139px;
+    width: 139px;:
+}
+
+.hotel-wrapper:nth-child(2) {
+
 }
 
 .hotel-price {
@@ -1000,6 +1023,8 @@ a.hotel-name {
 
 .found-hotel .rating {
     width: 110px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     font-size: 14px;
     font-weight: regular;
     line-height: 21px;
@@ -1010,9 +1035,7 @@ a.hotel-name {
 
 .found-hotel a.more-info {
     padding-top: 3px;
-    padding-bottom: 5px;
-    /*padding-left: 17px;
-            padding-right: 17px;*/
+    padding-bottom: 4px;
     font-size: 14px;
     font-weight: bold;
     line-height: 21px;
@@ -1043,7 +1066,7 @@ a.hotel-name {
 
 .found-hotel a.booking-button {
     padding-top: 3px;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
     /*    padding-left: 17px;
             padding-right: 17px;*/
     margin-left: 6px;
