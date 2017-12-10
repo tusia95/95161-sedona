@@ -549,7 +549,9 @@ h3 {
     background-color: #f2f2f2;
 }
 
-.age-container button::before {
+.age-container .minus-adult::before,
+.age-container .minus-child::before
+ {
   content:'';
   position: absolute;
   top:20px;
@@ -559,17 +561,16 @@ h3 {
   background: #a9a9a9;
 }
 
-.age-container button:hover::before {
+.minus-child:hover::before,
+.minus-adult:hover::before {
     color: #000000;
 }
 
-.age-container button:hover,
-.age-container input[type="button"]:hover {
+.age-container button:hover{
     color: #000000;
 }
 
-.age-container button :focus,
-.age-container input[type="button"]:focus  {
+.age-container button :focus {
     color: #81b3d2;
 }
 
@@ -639,7 +640,7 @@ input[type=number]::-webkit-outer-spin-button {
 .search-hotel-form {
     display: flex;
     min-height: 192px;
-    padding-top: 25px;
+    padding-top: 27px;
     padding-left: 6%;
     padding-right: 6%;
     margin-bottom: 30px;
@@ -657,16 +658,12 @@ input[type=number]::-webkit-outer-spin-button {
     width: 259px;
     color: #ffffff;
     text-transform: uppercase;
-    background-color: #222222;
-    border: 1px solid black;
 }
-
-
 
 .filter-list:nth-child(2) {padding-left: 2px;}
 
 .filter-list:last-child {
-    width: 330px;
+    width: 331px;
     margin-left: 232px;
 }
 
