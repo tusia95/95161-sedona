@@ -182,7 +182,7 @@ h3 {
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
-    min-height: 255px;
+    min-height: 257px;
     /*width: 1200px;*/
     margin-bottom: 47px;
     background-color: #eeeeee;
@@ -479,6 +479,14 @@ h3 {
     background-color: #f2f2f2;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
 .search-hotel-form-main input[type="text"]:hover,
 .search-hotel-form-main input[type="number"]:hover {
     background-color: #ebebeb;
@@ -516,13 +524,13 @@ h3 {
 .calendar-btn-arrival {
     position: absolute;
     top: 64px;
-    left: 475px;
+    left: 477px;
 }
 
 .calendar-btn-departure {
     position: absolute;
     top: 129px;
-    left: 475px;
+    left: 477px;
 }
 
 .search-hotel-form-main input[type="number"] {
@@ -553,8 +561,20 @@ h3 {
     color: #81b3d2;
 }
 
-.age-container .minus {
- margin-left: 22px;;
+.age-container .minus-adult,
+.age-container .minus-child {
+    position:relative;
+ margin-left: 22px;
+}
+
+.age-container .minus-adult::before {
+  content:'';
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 10px;
+  height: 2px;
+  background: red;
 }
 
 .age-container .child-label {
@@ -562,7 +582,7 @@ h3 {
 }
 
 .arithmetic-sign {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 600;
     line-height: 26px;
 }
