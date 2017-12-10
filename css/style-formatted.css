@@ -347,7 +347,7 @@ h3 {
 }
 
 .footer-sedona-tag {
-    margin-top: 13px;
+    margin-top: 15px;
     width: 400px;
     min-height: 50px;
     text-align: center;
@@ -639,10 +639,10 @@ input[type=number]::-webkit-outer-spin-button {
 .search-hotel-form {
     display: flex;
     min-height: 192px;
-    padding-top: 27px;
+    padding-top: 25px;
     padding-left: 6%;
     padding-right: 6%;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     background-image: url("../img/filter_background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -657,9 +657,13 @@ input[type=number]::-webkit-outer-spin-button {
     width: 259px;
     color: #ffffff;
     text-transform: uppercase;
+    background-color: #222222;
+    border: 1px solid black;
 }
 
-.filter-list:nth-child(2) {}
+
+
+.filter-list:nth-child(2) {padding-left: 2px;}
 
 .filter-list:last-child {
     width: 330px;
@@ -668,8 +672,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .filter-list-title {
     /*margin-top: 15px;*/
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-weight: 600;
+
     font-size: 16px;
     line-height: 21px;
 }
@@ -677,7 +682,7 @@ input[type=number]::-webkit-outer-spin-button {
 .day-price-container {
     position: relative;
     height: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-size: 0;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -696,10 +701,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .day-price-container label {
     display: inline-block;
-    padding-top: 5px;
+    padding-top: 10px;
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -771,7 +777,10 @@ input[type=number]::-webkit-outer-spin-button {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 35px;
+    padding-right: 36px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -795,15 +804,14 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 23px;
 }
 
+.accomodation-type .checkbox-item {
+    background-color: #000000;
+}
+
 .filter-checkbox {
     position: relative;
     cursor: pointer;
-    padding-left: 38px;
-
-}
-
-.filter-list:nth-child(2) .checkbox-item .filter-checkbox {
-    padding-left:43px;
+    padding-left: 40px;
 }
 
 .filter-checkbox input[type="checkbox"]+.checkbox-indicator {
@@ -840,8 +848,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .search-hotel-form .infrastructure,
 .search-hotel-form .accomodation-type {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
     font-weight: bold;
     line-height: 21px;
     color: #ffffff;
@@ -849,6 +859,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .search-hotel-form label {
     font-size: 14px;
+    letter-spacing: 0.3px;
     font-weight: regular;
     line-height: 21px;
     color: #ffffff;
