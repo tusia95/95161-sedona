@@ -563,14 +563,19 @@ h3 {
 
 .minus-child:hover::before,
 .minus-adult:hover::before {
-    color: #000000;
+    background-color: #000000;
+}
+
+.minus-child:focus::before,
+.minus-adult:focus::before {
+    background-color: #81b3d2;
 }
 
 .age-container button:hover{
     color: #000000;
 }
 
-.age-container button :focus {
+.age-container button:focus {
     color: #81b3d2;
 }
 
