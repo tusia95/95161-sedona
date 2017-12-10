@@ -121,7 +121,7 @@ h3 {
     width: 590px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 53px;
+    margin-bottom: 51px;
     padding-top: 30px;
 }
 
@@ -182,13 +182,14 @@ h3 {
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
+    min-height: 255px;
     /*width: 1200px;*/
     margin-bottom: 47px;
     background-color: #eeeeee;
 }
 
 .reasons {
-    padding-top: 45px;
+    padding-top: 47px;
     padding-bottom: 63px;
     /*padding-left: 6%;
         padding-right: 6%;*/
@@ -200,7 +201,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 151px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     font-size: 21px;
     font-weight: bold;
     line-height: 21px;
@@ -248,7 +249,7 @@ h3 {
     width: 302px;
     min-height: 232px;
     padding-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
@@ -368,7 +369,7 @@ h3 {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    width: 47px;
+    width: 46px;
     height: 47px;
     margin-left: 5px;
     padding-top: 10px;
@@ -408,7 +409,7 @@ h3 {
 }
 
 .copyright-text {
-    padding-top:15px;
+    padding-top:13px;
     font-size: 14px;
 }
 
