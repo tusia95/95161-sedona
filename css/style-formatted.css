@@ -640,7 +640,7 @@ input[type=number]::-webkit-outer-spin-button {
 .search-hotel-form {
     display: flex;
     min-height: 192px;
-    padding-top: 27px;
+    padding-top: 25px;
     padding-left: 6%;
     padding-right: 6%;
     margin-bottom: 30px;
@@ -655,10 +655,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .filter-list {
-    width: 259px;
+    width: 265px;
     color: #ffffff;
     text-transform: uppercase;
 }
+
+
 
 .filter-list:nth-child(2) {padding-left: 2px;}
 
