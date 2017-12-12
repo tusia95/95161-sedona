@@ -654,7 +654,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-image: url("../img/filter_background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-color: #6c96be;
+    background-color: #6c96be;
 }
 
 .checkbox-container {
@@ -981,7 +981,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-left: 6%;
     padding-right: 6%;
     padding-top: 26px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -989,9 +989,13 @@ input[type=number]::-webkit-outer-spin-button {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.found-hotel .hotel-photo {
+    padding-top:3px;
+}
+
 .hotel-level {
     width: 110px;
-    min-height: 87px;
+    min-height: 85px;
     margin-left: 524px;
     display: flex;
     flex-direction: column;
@@ -1016,7 +1020,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .hotel-wrapper a {
-    margin-top: 7px;
+    margin-top: 5px;
 }
 
 .hotel-wrapper p:first-child,
