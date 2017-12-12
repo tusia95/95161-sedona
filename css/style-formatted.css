@@ -102,7 +102,7 @@ h3 {
 
 .main-header-logo {
     position: absolute;
-    left: 44%;
+    left: 533px;
 }
 
 .main-background {
@@ -253,15 +253,17 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
-    background-position: 110px 10px;
+    /*background-position: 110px 10px;*/
 }
 
 .accomodation-recommendation {
     background-image: url("../img/svg-sedona/icon-1.svg");
+    background-position: 115px 12px;
 }
 
 .food-recommendation {
     background-image: url("../img/svg-sedona/icon-3.svg");
+    background-position: 115px 14px;
 }
 
 .souvenirs-recommendation {
@@ -645,10 +647,10 @@ input[type=number]::-webkit-outer-spin-button {
 .search-hotel-form {
     display: flex;
     min-height: 192px;
-    padding-top: 25px;
+    padding-top: 29px;
     padding-left: 6%;
     padding-right: 6%;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     background-image: url("../img/filter_background.png");
     background-repeat: no-repeat;
     background-size: cover;
